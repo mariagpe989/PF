@@ -1231,7 +1231,7 @@ protected function _dounderline($x, $y, $txt)
 	return sprintf('%.2F %.2F %.2F %.2F re f',$x*$this->k,($this->h-($y-$up/1000*$this->FontSize))*$this->k,$w*$this->k,-$ut/1000*$this->FontSizePt);
 }
 
-protected function _parsejpg($file)
+protected function _parsenpng($file)
 {
 	// Extract info from a JPEG file
 	$a = getimagesize($file);

@@ -443,3 +443,25 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `meddicamento`
+--
+
+CREATE TABLE `medicamento` (
+  `codmedicamento` int(11) NOT NULL,
+  `medicamento` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `tipo` varchar(100) COLLATE utf8_spanish_ci NOT NULL,
+  `caducidad` int(11) NOT NULL,
+  `medicamento_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `proveedor`
+--
+
+INSERT INTO `medicamento` (`codmedicamento`, `medicamento`, `tipo`, `caducidad`, `medicamento_id`) VALUES
+(1, 'Open Services', '965432143', 9645132, 'Lima', 2),
+(3, 'Lineo', '25804', 9865412, 'Lima', 2);
